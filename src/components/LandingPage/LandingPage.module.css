@@ -1,0 +1,42 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.imageContainer.dark {
+  background-color: gray;
+}
+
+.imageContainer.light {
+  background-color: rgb(240, 240, 240);
+}
+
+img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.playButtonContainer {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 769px) {
+  .gridContainer {
+      grid-template-columns: auto auto;
+  }
+}

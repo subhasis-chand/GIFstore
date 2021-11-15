@@ -1,0 +1,13 @@
+.searchBarContainer {
+    padding: 15px;
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.searchBarContainer > input {
+    border: none;
+    font-size: 18px;
+    outline: none;
+    margin-right: 10px;
+}
